@@ -1,0 +1,17 @@
+{% extends "home/index.html" %}
+
+{% block body %}
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Prediction Result</h1>
+        <p class="lead">Prediction point: {{ prediction_point }}</p>
+        <hr class="my-4">
+        <p>Prediction: {{ predict }}</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="{% url 'home:home-view' %}" role="button">Make another prediction</a>
+        </p>
+    </div>
+</div>
+
+{% endblock body %}
